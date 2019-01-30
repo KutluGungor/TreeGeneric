@@ -40,7 +40,7 @@ namespace TreeGeneric.UI
                 txtTreePrice.Text = treeType.TreePrice.ToString();
                 txtPlantingPrice.Text = treeType.PlantingPrice.ToString();
                 txtCommission.Text = treeType.Commision.ToString();
-                cbTreeRegion.SelectedItem = treeType.Region.Name;
+                //cbTreeRegion.SelectedItem = treeType.Region.Name;
 
                 //int regionId = treeType.RegionId;
                 //var region = regionService.Find(regionId);
@@ -87,7 +87,7 @@ namespace TreeGeneric.UI
             treeType.TreePrice = decimal.Parse(txtTreePrice.Text);
             treeType.PlantingPrice = decimal.Parse(txtPlantingPrice.Text);
             treeType.Commision = decimal.Parse(txtCommission.Text);
-            treeType.RegionId = int.Parse(cbTreeRegion.SelectedValue.ToString());
+            //treeType.RegionId = int.Parse(cbTreeRegion.SelectedValue.ToString());
 
             if (rbActive.Checked)
             {
@@ -115,7 +115,7 @@ namespace TreeGeneric.UI
                 treeType.TreePrice = decimal.Parse(txtTreePrice.Text);
                 treeType.PlantingPrice = decimal.Parse(txtPlantingPrice.Text);
                 treeType.Commision = decimal.Parse(txtCommission.Text);
-                treeType.RegionId = int.Parse(cbTreeRegion.SelectedValue.ToString());
+                //treeType.RegionId = int.Parse(cbTreeRegion.SelectedValue.ToString());
 
                 if (rbActive.Checked)
                 {

@@ -31,7 +31,7 @@ namespace TreeGeneric.UI
         public void RefreshGrid()
         {
             dataGridView1.AutoGenerateColumns = true;
-            dataGridView1.DataSource = treeTypeService.GetAll().Select(s => new {s.Id, s.Name, RegionName = s.Region.Name}).ToList();
+            dataGridView1.DataSource = treeTypeService.GetAll().Select(s => new {s.Id, s.Name, RegionName = s.Regions.FirstOrDefault()?.Name}).ToList();
         }
 
         private void btnDeleteTree_Click(object sender, EventArgs e)
